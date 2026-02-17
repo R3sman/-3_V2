@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
     clock_t end = clock();
     double timeInsertion = ((double)(end - start)) / CLOCKS_PER_SEC;
     saveStackToFile(&stackForInsertion, "output_insertion.txt");
-    printf("Отсортированный ряд (методом вставок): ");
+    printf("Отсортированный ряд (методом слияния): ");
     printStack(&stackForInsertion);
     printf("Время: %f секунд\n,", timeInsertion);
     freeStack(&stackForInsertion);
